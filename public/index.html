@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet">
 </head>
-<body >
+<body class="font-DanaMedium">
     <!--all app icons (sprite svg) -->
     <svg  class="hidden">
         <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
@@ -25,23 +25,23 @@
           
           
     </svg>
-<header class="flex">
+<header class="flex bg-black/50 w-[1728px] mx-auto">
     <!-- right side: menu & logo -->
-    <nav>
+    <nav class="flex">
         <!-- logo -->
         <div>
             <svg></svg>
         </div>
         <!-- menu -->
-        <ul>
+        <ul class="flex">
             <li>
-                <a class="font-MorabbaBold">صفحه اصلی</a>
+                <a class="">صفحه اصلی</a>
             </li>
             <li>
-                <a>فروشگاه</a>
+                <a class="">فروشگاه</a>
                     <ul>
                         <li>
-                            <a class="text-red-800">
+                            <a class="">
                                 قهوه ویژه
                             </a>
                         </li>
@@ -88,19 +88,19 @@
         </ul>
     </nav>
     <!-- left side: cart , theme toggle & login link -->
-    <div>
+    <div class="flex">
         <div>
-            <svg>
+            <svg class="w-7 h-7">
                 <use xlink:href="#shopping-cart"></use> 
             </svg>
         </div>
         <div>
-            <svg>
+            <svg class="w-7 h-7">
                 <use xlink:href="#moon"></use>
             </svg>
         </div>
-        <a>
-            <svg>
+        <a class="flex justify-items-center justify-center">
+            <svg class="w-7 h-7">
                 <use xlink:href="#arrow-left-on-rectangle"></use>
             </svg>
             ورود | ثبت نام
