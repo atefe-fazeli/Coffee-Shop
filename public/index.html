@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" >
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet">
 </head>
-<body class="font-DanaMedium">
+<body class="font-DanaMedium bg-gray-100 dark:bg-zinc-800">
     <!--all app icons (sprite svg) -->
     <svg  class="hidden">
         <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
@@ -25,89 +25,91 @@
           
           
     </svg>
-<header class="flex bg-black/50 w-[1728px] mx-auto">
-    <!-- right side: menu & logo -->
-    <nav class="flex">
-        <!-- logo -->
-        <div>
-            <svg></svg>
-        </div>
-        <!-- menu -->
-        <ul class="flex">
-            <li>
-                <a class="">صفحه اصلی</a>
-            </li>
-            <li>
-                <a class="">فروشگاه</a>
-                    <ul>
-                        <li>
-                            <a class="">
-                                قهوه ویژه
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                ویژه در سطح جهانی 
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                قهوه درجه یک
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                ترکیبات تجاری  
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                کپسول قهوه  
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                قهوه زینو برزیلی  
-                            </a>
-                        </li>
+    <header class="fixed top-9 right-0 left-0 flex items-center bg-black/50 w-[90%] mx-auto  h-24 rounded-3xl py-5 px-10 backdrop-blur[6px]">
+        <div class="flex w-full justify-between">
+            <!-- right side: menu & logo -->
+            <nav class="flex items-center gap-9">
+                <!-- logo -->
+                <div>
+                    <img src="../public/images/svgs/app-logo.svg">
+                </div>
+                <!-- menu -->
+                <ul class="flex gap-9 tracking-tightest">
+                    <li>
+                        <a class="text-orange-200  text-xl">صفحه اصلی</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-300 text-xl">فروشگاه</a>
+                            <!-- <ul>
+                                <li>
+                                    <a class="">
+                                        قهوه ویژه
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        ویژه در سطح جهانی 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        قهوه درجه یک
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        ترکیبات تجاری  
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        کپسول قهوه  
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        قهوه زینو برزیلی  
+                                    </a>
+                                </li>
 
-                    </ul>
-            </li>
-            <li>
-                <a>دیکشنری</a>
-            </li>
-            <li>
-                <a>بلاگ</a>
-            </li>
-            <li>
-                <a>درباره ما</a>
-            </li>
-            <li>
-                <a>تماس با ما</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- left side: cart , theme toggle & login link -->
-    <div class="flex">
-        <div>
-            <svg class="w-7 h-7">
-                <use xlink:href="#shopping-cart"></use> 
-            </svg>
+                            </ul> -->
+                    </li>
+                    <li>
+                        <a class="text-gray-300 text-xl">دیکشنری</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-300 text-xl">بلاگ</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-300 text-xl">درباره ما</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-300 text-xl">تماس با ما</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- left side: cart , theme toggle & login link -->
+            <div class="flex items-center text-orange-200 text-xl gap-x-11">
+                <div class="flex gap-x-5 items-center">
+                    <svg class="w-8 h-8 ">
+                        <use xlink:href="#shopping-cart"></use> 
+                    </svg>
+                    <svg class="w-8 h-8 ">
+                        <use xlink:href="#moon"></use>
+                    </svg>
+                </div>
+                <span class="w-px h-14 bg-white/20"></span>
+                <a class="flex items-center  gap-x-2.5 tracking-tightest">
+                    <svg class="w-8 h-8  rotate-180">
+                        <use xlink:href="#arrow-left-on-rectangle"></use>
+                    </svg>
+                    ورود  |  ثبت‌نام
+                </a>
+                
+            </div>
         </div>
-        <div>
-            <svg class="w-7 h-7">
-                <use xlink:href="#moon"></use>
-            </svg>
-        </div>
-        <a class="flex justify-items-center justify-center">
-            <svg class="w-7 h-7">
-                <use xlink:href="#arrow-left-on-rectangle"></use>
-            </svg>
-            ورود | ثبت نام
-        </a>
-        
-    </div>
-</header>
+
+    </header>
 <script src="scripts/app.js"></script>
 </body>
 </html>
