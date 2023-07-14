@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet">
+  <script type="text/javascript">
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+    } else {
+    document.documentElement.classList.remove('dark')
+    }
+  </script>
 </head>
 <body class="font-DanaMedium bg-gray-100 dark:bg-zinc-800">
     <!--all app icons (sprite svg) -->
@@ -20,6 +27,10 @@
         <symbol id="sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
         </symbol>
+        <symbol id="chevron-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </symbol>
+          
           
           
           
@@ -28,51 +39,40 @@
     <header class="fixed top-9 right-0 left-0 flex items-center bg-black/50 w-[90%] mx-auto  h-24 rounded-3xl py-5 px-10 backdrop-blur[6px]">
         <div class="flex w-full justify-between">
             <!-- right side: menu & logo -->
-            <nav class="flex items-center gap-9">
+            <nav class="flex items-center gap-9 h-14">
                 <!-- logo -->
                 <div>
-                    <img src="../public/images/svgs/app-logo.svg">
+                    <img src="../public/images/svgs/app-logo.svg" class="w-14 h-14">
                 </div>
                 <!-- menu -->
-                <ul class="flex gap-9 tracking-tightest">
+                <ul class="flex gap-9 tracking-tightest h-full child:leading-[56px]">
                     <li>
                         <a class="text-orange-200  text-xl">صفحه اصلی</a>
                     </li>
-                    <li>
-                        <a class="text-gray-300 text-xl">فروشگاه</a>
-                            <!-- <ul>
-                                <li>
-                                    <a class="">
-                                        قهوه ویژه
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        ویژه در سطح جهانی 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        قهوه درجه یک
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        ترکیبات تجاری  
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        کپسول قهوه  
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        قهوه زینو برزیلی  
-                                    </a>
-                                </li>
-
-                            </ul> -->
+                    <li class="relative group">
+                        <a class="text-gray-300 text-xl group-hover:text-orange-300 transition-colors">فروشگاه 
+                            <div class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white
+                            text-base tracking-normal rounded-xl w-52 p-6 pt-0 space-y-4 border-t-[3px] border-orange-300  shadow-custom transition-all  child:inline-block child:transition-colors child-hover:text-orange-300 child-hover:cursor-pointer">                          
+                                <a>
+                                            قهوه ویژه
+                                </a>                              
+                                <a>
+                                            ویژه در سطح جهانی 
+                                </a>                             
+                                <a>
+                                            قهوه درجه یک
+                                </a>
+                                <a>
+                                            ترکیبات تجاری  
+                                </a>                             
+                                <a>
+                                            کپسول قهوه  
+                                </a>
+                                <a>
+                                            قهوه زینو برزیلی  
+                                </a>
+                            </div>
+                        </a>
                     </li>
                     <li>
                         <a class="text-gray-300 text-xl">دیکشنری</a>
@@ -89,15 +89,55 @@
                 </ul>
             </nav>
             <!-- left side: cart , theme toggle & login link -->
-            <div class="flex items-center text-orange-200 text-xl gap-x-11">
+            <div class="flex  text-orange-200 text-xl gap-x-10">
                 <div class="flex gap-x-5 items-center">
-                    <svg class="w-8 h-8 ">
-                        <use xlink:href="#shopping-cart"></use> 
-                    </svg>
-                    <svg class="w-8 h-8 ">
-                        <use xlink:href="#moon"></use>
-                    </svg>
+                    <div class="relative group">
+                        <!-- cart icon -->
+                        <div class="py-3">
+                            <svg class="w-8 h-8 ">
+                                <use xlink:href="#shopping-cart"></use> 
+                            </svg>
+                        </div> 
+                        <!-- cart -->
+                        <div class="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white p-5 dark:bg-zinc-700 rounded-xl w-[400px] border-t-[3px] border-orange-300">
+                            <!-- cart header -->
+                            <div class="flex items-center justify-between child:font-xs">
+                                <span class="text-gray-300 ">1 مورد</span>
+                                <div class="flex items-center">
+                                    <a class="text-orange-300 ">مشاهده سبد خرید
+                                    </a>
+                                    <svg class="w-5 h-5">
+                                        <use xlink:href="#chevron-left" ></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- cart body -->
+                            <div>
+                                <!-- item image -->
+                                <div></div>
+                                <div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <!-- cart footer -->
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- theme icon -->
+                    <div id="toggle-theme">
+                        <svg class="w-8 h-8 inline-block dark:hidden">
+                            <use xlink:href="#moon"></use>
+                        </svg>
+                        <svg class="w-8 h-8 hidden dark:inline-block">
+                            <use xlink:href="#sun"></use>
+                        </svg>
+                    </div>
+
                 </div>
+                <!-- divider -->
                 <span class="w-px h-14 bg-white/20"></span>
                 <a class="flex items-center  gap-x-2.5 tracking-tightest">
                     <svg class="w-8 h-8  rotate-180">
