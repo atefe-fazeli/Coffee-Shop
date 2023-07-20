@@ -30,22 +30,26 @@
         <symbol id="chevron-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
         </symbol>
-          
+        <symbol id="bars-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </symbol>
+             
           
           
           
           
     </svg>
-    <header class="fixed top-9 right-0 left-0 flex items-center bg-black/50 w-[90%] mx-auto  h-24 rounded-3xl py-5 px-10 backdrop-blur[6px]">
+    <!-- desktop -->
+    <header class="fixed top-9 right-0 left-0 hidden md:flex items-center bg-black/50 w-[98] lg:w-[90%] mx-auto  h-24 rounded-3xl py-5 px-5 lg:px-10 backdrop-blur[6px]">
         <div class="flex w-full justify-between">
             <!-- right side: menu & logo -->
-            <nav class="flex items-center gap-9 h-14">
+            <nav class="flex items-center gap-x-5 lg:gap-9 h-14">
                 <!-- logo -->
-                <div>
+                <div class="shrink-0">
                     <img src="../public/images/app-logo.png" class="w-14 h-14">
                 </div>
                 <!-- menu -->
-                <ul class="flex gap-9 tracking-tightest h-full child:leading-[56px]">
+                <ul class="flex gap-x-5 lg:gap-x-9 tracking-tightest h-full child:leading-[56px]">
                     <li>
                         <a class="text-orange-200  text-xl">صفحه اصلی</a>
                     </li>
@@ -89,7 +93,8 @@
                 </ul>
             </nav>
             <!-- left side: cart , theme toggle & login link -->
-            <div class="flex  text-orange-200 text-xl gap-x-10">
+            <div class="flex  text-orange-200 text-xl gap-x-4 lg:gap-x-5  xl:gap-x-10">
+                <!-- cart Icon & theme switch btn  -->
                 <div class="flex gap-x-5 items-center">
                     <div class="relative group">
                         <!-- cart icon -->
@@ -101,7 +106,7 @@
                         <!-- cart -->
                         <div class="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white p-5 dark:bg-zinc-700 rounded-xl w-[400px] border-t-[3px] border-orange-300">
                             <!-- cart header -->
-                            <div class="flex items-center justify-between child:font-xs">
+                            <div class="flex items-center justify-between child:text-xs">
                                 <span class="text-gray-300 ">1 مورد</span>
                                 <div class="flex items-center">
                                     <a class="text-orange-300 ">مشاهده سبد خرید
@@ -112,26 +117,43 @@
                                 </div>
                             </div>
                             <!-- cart body -->
-                            <div class="flex">
-                                <!-- item image -->
-                                <img src="../public/images/CoffeeShop-Files/products/p2.png" alt="product2">
-                                <div class="flex text-base text-zinc-700 w-57">
-                                    <h4>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                                    <div>
-                                        <span class="text-teal-600"> 14.500<span> تومان تخفیف</span></span>
-                                        <div>175,000 
-                                            <span>تومان</span>
+                            <div class="border-b border-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/5 pb-1 child:flex child:py-5 max-h-96 overflow-auto">
+                                <div >
+                                    <!-- item image -->
+                                    <img src="/public/images/products/p2.png" alt="product2" class="w-30 h-30">
+                                    <div class="flex flex-col justify-between text-base text-zinc-700 dark:text-white">
+                                        <h4 class="line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                        <div>
+                                            <span class="text-teal-600 dark:text-emerald-500 tracking-tight text-xs"> 14.500<span > تومان تخفیف</span></span>
+                                            <div class="text-xl font-DanaDemiBolid">175,000 
+                                                <span class="text-sm font-normal">تومان</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- <div >
+                                   
+                                    <img src="/public/images/products/p2.png" alt="product2" class="w-30 h-30">
+                                    <div class="flex flex-col justify-between text-base text-zinc-700 dark:text-white">
+                                        <h4 class="line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                        <div>
+                                            <span class="text-teal-600 dark:text-emerald-500 tracking-tight text-xs"> 14.500<span > تومان تخفیف</span></span>
+                                            <div class="text-xl font-DanaDemiBolid">175,000 
+                                                <span class="text-sm font-normal">تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
                             </div>
                             <!-- cart footer -->
-                            <div>
-                                <div>
-                                    <span></span>
-                                    <span><span></span>
+                            <div class="flex justify-between mt-5">
+                                <div class="flex flex-col justify-between ">
+                                    <span class="text-gray-300 text-xs">مبلغ قابل پرداخت</span>
+                                    <span class="text-zinc-700 dark:text-white text-xl font-DanaDemiBolid">350,000<span class="text-sm font-normal"> تومان</span></span>
                                 </div>
-
+                                <a class="w-36 h-14 bg-teal-600 hover:bg-teal-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white text-xl tracking-tightest rounded-xl font-Dana flex justify-center items-center">
+                                    ثبت سفارش
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -148,17 +170,25 @@
                 </div>
                 <!-- divider -->
                 <span class="w-px h-14 bg-white/20"></span>
+                <!-- login link  -->
                 <a class="flex items-center  gap-x-2.5 tracking-tightest">
                     <svg class="w-8 h-8  rotate-180">
                         <use xlink:href="#arrow-left-on-rectangle"></use>
                     </svg>
-                    ورود  |  ثبت‌نام
+                    <span class="hidden xl:inline-block">
+                        ورود  |  ثبت‌نام
+                    </span>
                 </a>
                 
             </div>
         </div>
 
     </header>
+    <!-- mobile -->
+    <header class="flex justify-between md:hidden">
+
+    </header>
+
 <script src="scripts/app.js"></script>
 </body>
 </html>
