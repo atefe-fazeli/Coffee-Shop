@@ -67,7 +67,13 @@
         <symbol id="phone-arrow-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
             <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
         </symbol>
-                 
+        <symbol id="chevron-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </symbol>
+        <symbol id="chevron-up" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </symbol>
+                     
           
           
           
@@ -193,7 +199,7 @@
                         </div>
                     </div>
                     <!-- theme icon -->
-                    <div id="toggle-theme">
+                    <div class="toggle-theme">
                         <svg class="w-8 h-8 inline-block dark:hidden">
                             <use xlink:href="#moon"></use>
                         </svg>
@@ -228,7 +234,111 @@
             </svg>
         </div>
         <!-- navbar -->
-
+            <div class="md:hidden fixed right-0 top-0 h-screen w-8/12 px-4 pt-3 pb-14 bg-white dark:bg-zinc-700 z-30 overflow-auto ">
+                <div class="border-b border-gray-100 dark:border-white/10 pb-5 flex justify-between items-center">
+                    <div class="flex gap-x-3.5">
+                        <img src="/public/images/app-logo.png" class="w-10 h-10">    
+                        <svg fill="#FDBA74" class="w-[100px] h-10">
+                            <use xlink:href="#logo-type"></use>
+                        </svg>
+                    </div>
+                    <svg class="w-3 h-3 text-zink-600 dark:text-white">
+                        <use xlink:href="#x-mark"></use>
+                    </svg>
+                </div>
+                <ul class="mt-6 pb-8 space-y-4 border-b border-b-gray-100 dark:border-b-white/10 child:flex child:gap-x-3 child:font-dana">
+                    <li class="text-orange-300 bg-orange-200/40   p-2.5 rounded-md ">
+                        <svg class="w-5 h-5">
+                            <use xlink:href="#home"></use>
+                        </svg>
+                        <a >
+                            صفحه اصلی
+                        </a>
+                    </li>
+                    <li class="text-zinc-600 dark:text-white p-2.5 justify-between items-center">
+                        <div class="flex gap-x-1.5">
+                            <svg class="w-5 h-5">
+                                <use xlink:href="#shopping-bag"></use>
+                            </svg>
+                            <a >
+                                فروشگاه   
+                            </a>
+                        </div>
+                        <div class="">
+                            <svg class="w-4 h-4">
+                                <use xlink:href="#chevron-up"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <!-- submenu -->
+                    <div class="flex flex-col items-start text-sm font-Dana text-zinc-600 dark:text-white gap-y-3 px-10 child:inline-flex">
+                        <a class="">قهوه ویژه</a>
+                        <a class="inline-flex items-center gap-x-2" ><div class="w-1 h-1 rounded-full bg-orange-300"></div>ویژه در سطح جهانی</a>
+                        <a class="">قهوه درجه یک</a>
+                        <a class="">ترکیبات تجاری</a>
+                        <a class="">کپسول قهوه</a>
+                        <a class="">قهوه زینو برزیلی</a>
+                    </div>
+                    <li class="text-zinc-600 dark:text-white  p-2.5 ">
+                        <svg class="w-5 h-5">
+                            <use xlink:href="#chat"></use>
+                        </svg>
+                        <a >
+                            دیکشنری   
+                        </a>
+                    </li>
+                    <li class="text-zinc-600 dark:text-white  p-2.5 ">
+                        <svg class="w-5 h-5">
+                            <use xlink:href="#briefcase"></use>
+                        </svg>
+                        <a >
+                            درباره ما   
+                        </a>
+                    </li>
+                    <li class="text-zinc-600 dark:text-white  p-2.5 ">
+                        <svg class="w-5 h-5">
+                            <use xlink:href="#document-text"></use>
+                        </svg>
+                        <a >
+                            بلاگ   
+                        </a>
+                    </li>
+                    <li class="text-zinc-600 dark:text-white  p-2.5 ">
+                        <svg class="w-5 h-5">
+                            <use xlink:href="#phone-arrow-down"></use>
+                        </svg>
+                        <a >
+                            تماس با ما   
+                        </a>
+                    </li>
+                </ul>
+                <div class="flex flex-col mt-8 px-2.5 gap-y-6 items-start child:text-orange-300  child:items-center child:gap-x-2 child:text-base">
+                    <a class="inline-flex">
+                        <svg class="w-5 h-5">
+                            <use xlink:href="#arrow-left-on-rectangle"></use>
+                        </svg>
+                        ورود  |  ثبت‌نام
+                    </a>
+                    <div  class="hidden dark:inline-flex toggle-theme">
+                        <svg class="w-5 h-5">
+                            <use xlink:href="#moon"></use>
+                        </svg>
+                        تم تیره
+                    </div>
+                    <div class="inline-flex dark:hidden toggle-theme">
+                        <svg class="w-5 h-5">
+                            <use xlink:href="#sun"></use>
+                        </svg>
+                        تم روشن
+                    </div>
+                    <a class="inline-flex">
+                        <svg class="w-5 h-5">
+                            <use xlink:href="#shopping-cart"></use>
+                        </svg>
+                        سبد خرید
+                    </a>
+                </div>
+            </div>
         <!-- logo type -->
         <div>
             <svg class="w-[100px] h-16" fill="#FDBA74">
@@ -245,7 +355,8 @@
 
 
 
-
+    <div class="md:hidden overlay w-full h-full bg-black/40 fixed left-0 top-0 z-20">
+    </div>
 <script src="scripts/app.js"></script>
 </body>
 </html>
