@@ -1,5 +1,7 @@
 const toggleThemeBtns = document.querySelectorAll(".toggle-theme");
-console.log(toggleThemeBtns)
+const submenuToggle = document.querySelector(".submenu--toggle");
+const submenu = document.querySelector(".submenu");
+
 toggleThemeBtns.forEach(btn =>{
     btn.addEventListener("click" , () => {
         if (localStorage.theme === "dark"){
@@ -13,3 +15,8 @@ toggleThemeBtns.forEach(btn =>{
 }
 
     )
+
+submenuToggle.addEventListener("click", (event)=>{
+    event.currentTarget.parentElement.classList.toggle("text-orange-300")
+    submenu.classList.toggle("submenu--open")
+})

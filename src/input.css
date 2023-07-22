@@ -46,3 +46,29 @@
         cursor: pointer;
       }
 }
+@layer components{
+  .submenu{
+   @apply hidden flex-col items-start text-sm font-Dana text-zinc-600 dark:text-white gap-y-3 px-7 pt-3
+  }
+  .submenu--open{
+    @apply flex
+  }
+  .submenu_item--active{
+    position: relative;
+    padding-right: 10px;
+    color: #FDBA74;
+  }
+  .submenu_item--active::before{
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #FDBA74;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+  }
+}

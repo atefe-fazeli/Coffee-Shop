@@ -255,30 +255,32 @@
                             صفحه اصلی
                         </a>
                     </li>
-                    <li class="text-zinc-600 dark:text-white p-2.5 justify-between items-center">
-                        <div class="flex gap-x-1.5">
-                            <svg class="w-5 h-5">
-                                <use xlink:href="#shopping-bag"></use>
-                            </svg>
-                            <a >
-                                فروشگاه   
-                            </a>
+                    <li class="text-zinc-600 dark:text-white p-2.5 flex flex-col">
+                        <div class="flex justify-between items-center transition-colors">
+                            <div class="flex gap-x-1.5">
+                                <svg class="w-5 h-5">
+                                    <use xlink:href="#shopping-bag"></use>
+                                </svg>
+                                <a >
+                                    فروشگاه   
+                                </a>
+                            </div>
+                            <div class="submenu--toggle">
+                                <svg class="w-4 h-4">
+                                    <use xlink:href="#chevron-down"></use>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="">
-                            <svg class="w-4 h-4">
-                                <use xlink:href="#chevron-up"></use>
-                            </svg>
+                        <!-- submenu -->
+                        <div class="submenu child:inline-flex">
+                            <a class="">قهوه ویژه</a>
+                            <a class="submenu_item--active">ویژه در سطح جهانی</a>
+                            <a class="">قهوه درجه یک</a>
+                            <a class="">ترکیبات تجاری</a>
+                            <a class="">کپسول قهوه</a>
+                            <a class="">قهوه زینو برزیلی</a>
                         </div>
                     </li>
-                    <!-- submenu -->
-                    <div class="flex flex-col items-start text-sm font-Dana text-zinc-600 dark:text-white gap-y-3 px-10 child:inline-flex">
-                        <a class="">قهوه ویژه</a>
-                        <a class="inline-flex items-center gap-x-2" ><div class="w-1 h-1 rounded-full bg-orange-300"></div>ویژه در سطح جهانی</a>
-                        <a class="">قهوه درجه یک</a>
-                        <a class="">ترکیبات تجاری</a>
-                        <a class="">کپسول قهوه</a>
-                        <a class="">قهوه زینو برزیلی</a>
-                    </div>
                     <li class="text-zinc-600 dark:text-white  p-2.5 ">
                         <svg class="w-5 h-5">
                             <use xlink:href="#chat"></use>
