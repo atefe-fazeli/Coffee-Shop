@@ -586,6 +586,37 @@ a{
   --tw-backdrop-sepia:  ;
 }
 
+.navbar {
+  position: fixed;
+  right: -16rem;
+  top: 0px;
+  z-index: 30;
+  height: 100vh;
+  width: 66.666667%;
+  overflow: auto;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 3.5rem;
+}
+
+:is(.dark .navbar) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+
+.navbar--open {
+  right: 0px;
+}
+
 .submenu {
   display: none;
   flex-direction: column;
@@ -629,6 +660,29 @@ a{
   margin: auto;
 }
 
+.overlay {
+  visibility: hidden;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 0.4);
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    display: none;
+  }
+}
+
+.overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -645,6 +699,10 @@ a{
   position: relative;
 }
 
+.-right-64 {
+  right: -16rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -653,24 +711,12 @@ a{
   right: 0px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .top-9 {
   top: 2.25rem;
 }
 
 .top-full {
   top: 100%;
-}
-
-.z-20 {
-  z-index: 20;
-}
-
-.z-30 {
-  z-index: 30;
 }
 
 .mx-auto {
@@ -757,10 +803,6 @@ a{
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .max-h-96 {
   max-height: 24rem;
 }
@@ -803,10 +845,6 @@ a{
 
 .w-8 {
   width: 2rem;
-}
-
-.w-8\/12 {
-  width: 66.666667%;
 }
 
 .w-\[100px\] {
@@ -963,10 +1001,6 @@ a{
   border-bottom-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
-.bg-black\/40 {
-  background-color: rgb(0 0 0 / 0.4);
-}
-
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
 }
@@ -1044,10 +1078,6 @@ a{
   padding-bottom: 0.25rem;
 }
 
-.pb-14 {
-  padding-bottom: 3.5rem;
-}
-
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1058,10 +1088,6 @@ a{
 
 .pt-0 {
   padding-top: 0px;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
 }
 
 .font-Dana {

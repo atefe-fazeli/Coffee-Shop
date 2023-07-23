@@ -47,6 +47,12 @@
       }
 }
 @layer components{
+  .navbar{
+    @apply md:hidden fixed -right-64 top-0 h-screen w-8/12 px-4 pt-3 pb-14 bg-white dark:bg-zinc-700 z-30 overflow-auto 
+  }
+  .navbar--open{
+    @apply right-0
+  }
   .submenu{
    @apply hidden flex-col items-start text-sm font-Dana text-zinc-600 dark:text-white gap-y-3 px-7 pt-3
   }
@@ -70,5 +76,11 @@
     bottom: 0;
     margin: auto;
 
+  }
+  .overlay{
+    @apply invisible opacity-0 w-full h-full bg-black/40 fixed left-0 top-0 z-20 md:hidden
+  }
+  .overlay--visible{
+    @apply visible opacity-100
   }
 }
