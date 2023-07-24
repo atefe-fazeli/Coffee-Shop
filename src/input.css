@@ -77,6 +77,12 @@
     margin: auto;
 
   }
+  .cart{
+    @apply fixed top-0 -left-64 flex flex-col w-64 h-full bg-white dark:bg-zinc-700 px-4 pt-5 pb-8 z-30
+  }
+  .cart--open{
+    @apply left-0
+  }
   .overlay{
     @apply invisible opacity-0 w-full h-full bg-black/40 fixed left-0 top-0 z-20 md:hidden
   }

@@ -3,8 +3,13 @@ const submenuToggle = document.querySelector(".submenu--toggle");
 const submenu = document.querySelector(".submenu");
 const navIcon = document.querySelector(".nav-icon");
 const navbar = document.querySelector(".navbar");
-const overlay = document.querySelector(".overlay")
-const navbarCloseBtn = document.querySelector(".navbar-close-btn")
+const overlay = document.querySelector(".overlay");
+const navbarCloseBtn = document.querySelector(".navbar-close-btn");
+const cartIcon = document.querySelector(".cart-icon");
+const cart = document.querySelector(".cart");
+const cartCloseBtn = document.querySelector(".cart-close-btn");
+
+
 
 toggleThemeBtns.forEach(btn =>{
     btn.addEventListener("click" , () => {
@@ -38,6 +43,19 @@ navbarCloseBtn.addEventListener("click",()=>{
 })
 overlay.addEventListener("click",()=>{
     navbar.classList.remove("navbar--open")
+    cart.classList.remove("cart--open")
+    cart.classList.add("-left-64")
     navbar.classList.add("-right-64")
+    overlay.classList.remove("overlay--visible")
+})
+
+cartIcon.addEventListener("click",()=>{
+    cart.classList.remove("-left-64")
+    cart.classList.add("cart--open")
+    overlay.classList.add("overlay--visible")
+})
+cartCloseBtn.addEventListener("click",()=>{
+    cart.classList.remove("cart--open")
+    cart.classList.add("-left-64")
     overlay.classList.remove("overlay--visible")
 })
