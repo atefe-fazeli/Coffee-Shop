@@ -592,7 +592,7 @@ a{
   top: 0px;
   z-index: 30;
   height: 100vh;
-  width: 66.666667%;
+  width: 16rem;
   overflow: auto;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -711,6 +711,10 @@ a{
   right: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-9 {
   top: 2.25rem;
 }
@@ -734,6 +738,17 @@ a{
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .line-clamp-2 {
@@ -761,6 +776,10 @@ a{
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-11 {
+  height: 2.75rem;
 }
 
 .h-14 {
@@ -799,12 +818,24 @@ a{
   height: 2rem;
 }
 
+.h-\[90px\] {
+  height: 90px;
+}
+
 .h-full {
   height: 100%;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .max-h-96 {
   max-height: 24rem;
+}
+
+.max-h-\[500px\] {
+  max-height: 500px;
 }
 
 .w-10 {
@@ -813,6 +844,10 @@ a{
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-3 {
@@ -843,6 +878,10 @@ a{
   width: 1.5rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -853,6 +892,10 @@ a{
 
 .w-\[400px\] {
   width: 400px;
+}
+
+.w-\[90px\] {
+  width: 90px;
 }
 
 .w-\[98\] {
@@ -1001,6 +1044,11 @@ a{
   border-bottom-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
+.border-b-gray-300 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
 }
@@ -1088,6 +1136,10 @@ a{
 
 .pt-0 {
   padding-top: 0px;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .font-Dana {
@@ -1235,6 +1287,11 @@ a{
   align-items: center;
 }
 
+.child\:gap-x-1 > * {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+}
+
 .child\:gap-x-2 > * {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -1243,6 +1300,15 @@ a{
 .child\:gap-x-3 > * {
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
+}
+
+.child\:border-b > * {
+  border-bottom-width: 1px;
+}
+
+.child\:border-b-gray-100 > * {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
 .child\:py-5 > * {
@@ -1336,6 +1402,14 @@ a{
 :is(.dark .dark\:hover\:bg-emerald-600:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(5 150 105 / var(--tw-bg-opacity));
+}
+
+:is(.dark .child\:dark\:border) > * {
+  border-width: 1px;
+}
+
+:is(.dark .child\:dark\:border-b-white\/10) > * {
+  border-bottom-color: rgb(255 255 255 / 0.1);
 }
 
 @media (min-width: 768px) {
