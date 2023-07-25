@@ -782,6 +782,10 @@ a{
   border-color: rgb(255 255 255 / 0.8);
 }
 
+.products {
+  height: 900px;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -935,6 +939,10 @@ a{
   height: 200px;
 }
 
+.h-\[22px\] {
+  height: 22px;
+}
+
 .h-\[30px\] {
   height: 30px;
 }
@@ -949,10 +957,6 @@ a{
 
 .h-px {
   height: 1px;
-}
-
-.h-\[22px\] {
-  height: 22px;
 }
 
 .max-h-96 {
@@ -1442,6 +1446,16 @@ a{
   transition-duration: 150ms;
 }
 
+@media (min-width: 1024px) {
+  .lg\:products--light{
+    background-image: linear-gradient(rgba(243,244,246,0.65),rgba(243,244,246,0.65)), url(../public/images/body-bg.png);
+  }
+
+  :is(.dark .lg\:dark\:products--dark){
+    background-image: url(../public/images/body-bg.png);
+  }
+}
+
 .hover\:bg-teal-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
@@ -1620,6 +1634,10 @@ a{
 
   .md\:mb-2 {
     margin-bottom: 0.5rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {
