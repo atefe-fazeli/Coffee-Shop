@@ -73,8 +73,8 @@
         <symbol id="chevron-up" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
           </symbol>
-        <symbol id="curve" width="100" height="22" viewBox="0 0 100 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" fill="#F3F4F6"/>
+        <symbol id="curve" width="100" height="22" viewBox="0 0 100 22"  xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" fill="currentColor"/>
         </symbol>
                          
           
@@ -84,7 +84,7 @@
           
     </svg>
     <!-- desktop header-->
-    <header class="fixed top-9 right-0 left-0 hidden md:flex items-center bg-black/50 w-[98] lg:w-[90%] mx-auto  h-24 rounded-3xl py-5 px-5 lg:px-10 backdrop-blur[6px]">
+    <header class="fixed top-9 right-0 left-0 z-50 hidden md:flex items-center bg-black/50 w-[98] lg:w-[90%] mx-auto  h-24 rounded-3xl py-5 px-5 lg:px-10 backdrop-blur[6px]">
         <div class="flex w-full justify-between">
             <!-- right side: menu & logo -->
             <nav class="flex items-center gap-x-5 lg:gap-9 h-14">
@@ -229,7 +229,7 @@
 
     </header>
     <!-- mobile header -->
-    <header class="flex justify-between items-center  md:hidden bg-white dark:bg-zinc-700 w-full h-16 px-4">
+    <header class="flex  justify-between items-center  md:hidden bg-white dark:bg-zinc-700 w-full h-16 px-4">
         <!-- nav Icon -->
         <div class="nav-icon">
             <svg class="w-6 h-6 dark:text-white">
@@ -411,8 +411,8 @@
     </header>
     <!-- main -->
     <main>
-        <section class="home bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center-top]  xs:aspect-[2/1] md:aspect-auto">
-            <div class="container h-full md:min-h-screen  relative">
+        <section class="home  h-[200px] xs:h-auto bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center-top]  xs:aspect-[2/1] md:aspect-auto">
+            <div class="container relative h-full md:min-h-screen overflow-y-hidden">
                 <div class="flex justify-end pt-[30px] md:pt-[305px]">
                     <div class="text-white">
                         <h1 class="text-2xl md:text-6xl font-MorabbaBold mb-0.5 md:mb-2">قهوه عربیکا تانزانیا</h1>
@@ -423,19 +423,23 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="absolute left-0 right-0 mx-auto">
-                <div class="flex items-center justify-center w-[203px] h-[203px] border border-white/25 rounded-full">
-                    <div class="flex items-center justify-center w-[145px] h-[145px] border border-white/25 rounded-full">
-                        <div class="flex items-center justify-center w-[95px] h-[95px] border border-white/25 rounded-full">
-                            <svg>
-                                <use xlink:href="#curve"></use>
-                            </svg>
-                        </div>
+                <div class="circle circle--main circle--lg">
+                    <div class="circle circle--md">
+                        <div class="circle circle--sm"></div>
                     </div>
                 </div>
             </div>
+
+            <svg class="w-[100px] h-[22px] absolute bottom-0 right-0 left-0 mx-auto text-gray-100 dark:text-zinc-800">
+                <use xlink:href="#curve"></use>
+            </svg>
+            <div class="absolute bottom-0  right-0 left-0   mx-auto w-[30px] h-[30px] border-2 border-orange-300 flex justify-center items-center rounded-full translate-y-2/4">
+                <svg class="w-4 h-4 text-zinc-700 dark:text-white">
+                    <use xlink:href="#chevron-down"></use>
+                </svg>
+            </div>
         </section>
+        <section class="products"></section>
     </main>
 
 
