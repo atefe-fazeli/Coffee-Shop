@@ -73,7 +73,10 @@
         <symbol id="chevron-up" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
           </symbol>
-                     
+        <symbol id="curve" width="100" height="22" viewBox="0 0 100 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" fill="#F3F4F6"/>
+        </symbol>
+                         
           
           
           
@@ -408,9 +411,9 @@
     </header>
     <!-- main -->
     <main>
-        <section class="home">
-            <div class="container">
-                <div class="flex justify-end md:mt-[305px]">
+        <section class="home bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center-top]  xs:aspect-[2/1] md:aspect-auto">
+            <div class="container h-full md:min-h-screen  relative">
+                <div class="flex justify-end pt-[30px] md:pt-[305px]">
                     <div class="text-white">
                         <h1 class="text-2xl md:text-6xl font-MorabbaBold mb-0.5 md:mb-2">قهوه عربیکا تانزانیا</h1>
                         <h2 class="text-xl md:text-5xl font-MorabbaLight">یک فنجان بالانس !</h2>
@@ -418,6 +421,17 @@
                         <p class="text-xs md:text-2xl font-Dana w-[201px] md:w-[462px]">
                             قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute left-0 right-0 mx-auto">
+                <div class="flex items-center justify-center w-[203px] h-[203px] border border-white/25 rounded-full">
+                    <div class="flex items-center justify-center w-[145px] h-[145px] border border-white/25 rounded-full">
+                        <div class="flex items-center justify-center w-[95px] h-[95px] border border-white/25 rounded-full">
+                            <svg>
+                                <use xlink:href="#curve"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>

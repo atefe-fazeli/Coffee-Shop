@@ -582,6 +582,12 @@ a{
   padding-left: 1rem;
 }
 
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -872,8 +878,20 @@ a{
   height: 2rem;
 }
 
+.h-\[145px\] {
+  height: 145px;
+}
+
+.h-\[203px\] {
+  height: 203px;
+}
+
 .h-\[90px\] {
   height: 90px;
+}
+
+.h-\[95px\] {
+  height: 95px;
 }
 
 .h-full {
@@ -940,8 +958,16 @@ a{
   width: 100px;
 }
 
+.w-\[145px\] {
+  width: 145px;
+}
+
 .w-\[201px\] {
   width: 201px;
+}
+
+.w-\[203px\] {
+  width: 203px;
 }
 
 .w-\[400px\] {
@@ -950,6 +976,10 @@ a{
 
 .w-\[90px\] {
   width: 90px;
+}
+
+.w-\[95px\] {
+  width: 95px;
 }
 
 .w-\[98\] {
@@ -1066,12 +1096,20 @@ a{
   border-radius: 1.5rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-b {
@@ -1097,6 +1135,10 @@ a{
   border-color: rgb(253 186 116 / var(--tw-border-opacity));
 }
 
+.border-white\/25 {
+  border-color: rgb(255 255 255 / 0.25);
+}
+
 .border-b-gray-100 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(243 244 246 / var(--tw-border-opacity));
@@ -1105,6 +1147,10 @@ a{
 .border-b-gray-300 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.bg-\[center-top\] {
+  background-color: center-top;
 }
 
 .bg-black\/50 {
@@ -1137,6 +1183,18 @@ a{
 
 .bg-white\/20 {
   background-color: rgb(255 255 255 / 0.2);
+}
+
+.bg-home-mobile {
+  background-image: url(../../public/images/headerBgMobile.webp);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-2 {
@@ -1199,6 +1257,10 @@ a{
 
 .pt-0 {
   padding-top: 0px;
+}
+
+.pt-\[30px\] {
+  padding-top: 30px;
 }
 
 .font-Dana {
@@ -1480,6 +1542,12 @@ a{
   border-bottom-color: rgb(255 255 255 / 0.1);
 }
 
+@media (min-width: 480px) {
+  .xs\:aspect-\[2\/1\] {
+    aspect-ratio: 2/1;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:my-8 {
     margin-top: 2rem;
@@ -1490,16 +1558,16 @@ a{
     margin-bottom: 0.5rem;
   }
 
-  .md\:mt-\[305px\] {
-    margin-top: 305px;
-  }
-
   .md\:flex {
     display: flex;
   }
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:aspect-auto {
+    aspect-ratio: auto;
   }
 
   .md\:h-0 {
@@ -1510,8 +1578,20 @@ a{
     height: 0.125rem;
   }
 
+  .md\:min-h-screen {
+    min-height: 100vh;
+  }
+
   .md\:w-\[462px\] {
     width: 462px;
+  }
+
+  .md\:bg-home-desktop {
+    background-image: url(../../public/images/headerBgDesktop.webp);
+  }
+
+  .md\:pt-\[305px\] {
+    padding-top: 305px;
   }
 
   .md\:text-2xl {
