@@ -16,7 +16,7 @@
       }
     </script>
   </head>
-  <body class="font-DanaMedium bg-gray-100 dark:bg-zinc-800">
+  <body class="font-DanaMedium text-zinc-700 bg-gray-100 dark:bg-zinc-800">
     <!--all app icons (sprite svg) -->
     <svg class="hidden">
       <symbol
@@ -359,6 +359,20 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+        />
+      </symbol>
+      <symbol
+        id="phone"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
         />
       </symbol>
     </svg>
@@ -1963,7 +1977,7 @@
               </a>
             </div>
             <div
-              class="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 gap-3.5 md:gap-5"
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 md:gap-5"
             >
               <div
                 class="flex group gap-2.5 md:gap-x-3 md:flex-col p-2.5 rounded-2xl bg-white dark:bg-zinc-700 w-full"
@@ -2165,6 +2179,45 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <!-- one of the best -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-4 md:gap-5 gap-8 mt-7 md:mt-28"
+          >
+            <div>
+              <img
+                src="/public/images/contact.png"
+                class="w-[296px] h-[305px]"
+              />
+            </div>
+            <div class="col-span-3 flex flex-col">
+              <span class="section-title">یکی از بهترین قهوه ها !</span>
+              <span class="section-subtitle mb-5 md:mb-6"
+                >کیفیت قهوه را از ما بخواهید ...</span
+              >
+              <span
+                class="flex gap-x-2.5 mb-5 md:mb-6 child:w-1 child:h-1 child:rounded-full child:bg-zinc-700 child:dark:bg-gray-400"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span class="text-lg md:text-2xl dark:text-white font-normal"
+                >فضای گرم و دنج ما را احساس کنید، جایی که همه می توانند قهوه
+                معطری پیدا کنند و دسرهای خوشمزه ما را که کاملاً با قهوه داغ
+                همراه شده است، امتحان کنند. فضای داخلی شیک و کارکنان خوش برخورد
+                ما روز شما را می سازد!</span
+              >
+              <button
+                class="border border-orange-300 rounded-full flex-center w-[180px] h-[50px] md:h-[60px] md:w-[216px] text-base md:text-xl gap-x-2 text-orange-300 mt-5 md:mt-6"
+              >
+                <svg class="w-[22px] h-[22px] md:w-8 md:h-8">
+                  <use xlink:href="#phone"></use>
+                </svg>
+
+                <span class="tracking-tighter">ثبت سفارش تلفنی</span>
+              </button>
             </div>
           </div>
         </div>
