@@ -159,7 +159,7 @@
     margin: auto;
     inset: 0;
     background-color: #d1d5db;
-    width: 100%;
+    width: calc(100% - 4rem);
     height: 1px;
   }
   html.dark.services::after,.services::before{

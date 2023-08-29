@@ -375,6 +375,10 @@
           d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
         />
       </symbol>
+      <symbol id="mini-chevron-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clip-rule="evenodd" />
+      </symbol>
+      
     </svg>
     <!-- desktop header-->
     <header
@@ -1572,327 +1576,333 @@
               </span>
             </div>
           </div>
-          <!--best-selling products cart container -->
+        </div>
+      </section>
+      <section>
+        <!--best-selling products cart container -->
+        <div
+          class="container grid xs:grid-cols-2 sx:grid-cols-3 lg:grid-cols-4 gap-3.5 lg:gap-5 mt-5 md:mt-12"
+        >
+          <!-- products cart -->
           <div
-            class="grid xs:grid-cols-2 sx:grid-cols-3 lg:grid-cols-4 gap-3.5 lg:gap-5 mt-5 md:mt-12"
+            class="flex flex-col px-2 py-[22px] md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-custom"
           >
-            <!-- products cart -->
-            <div
-              class="flex flex-col px-2 py-[22px] md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-custom"
-            >
-              <div class="relative mb-2 md:mb-5">
-                <span
-                  class="hidden absolute top-1/5 right-1/5 w-[54px] h-[30px] text-center leading-8 rounded-full bg-orange-300 text-white dark:text-zinc-700"
-                  >۱۲٪</span
-                >
-                <img
-                  src="../public/images/products/p5.png"
-                  loading="lazy"
-                  class="w-32 h-32 md:w-[260px] md:h-[260px] m-auto"
-                />
-              </div>
-              <p
-                class="text-sm/[28px] md:text-xl font-DanaMedium text-zinc-700 dark:text-white line-clamp-2 mb-1.5 md:mb-2.5 h-14"
+            <div class="relative mb-2 md:mb-5">
+              <span
+                class="hidden absolute top-1/5 right-1/5 w-[54px] h-[30px] text-center leading-8 rounded-full bg-orange-300 text-white dark:text-zinc-700"
+                >۱۲٪</span
               >
-                قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
-              </p>
-              <!-- Discounted products -->
-              <div class="flex gap-x-2.5">
+              <img
+                src="../public/images/products/p5.png"
+                loading="lazy"
+                class="w-32 h-32 md:w-[260px] md:h-[260px] m-auto"
+              />
+            </div>
+            <p
+              class="text-sm/[28px] md:text-xl font-DanaMedium text-zinc-700 dark:text-white line-clamp-2 mb-1.5 md:mb-2.5 h-14"
+            >
+              قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+            </p>
+            <!-- Discounted products -->
+            <div class="flex gap-x-2.5">
+              <span
+                class="text-base md:text-xl md:font-DanaDemiBolid text-teal-600 dark:text-emerald-500"
+              >
+                180,000
                 <span
-                  class="text-base md:text-xl md:font-DanaDemiBolid text-teal-600 dark:text-emerald-500"
+                  class="text-xs md:text-sm text-teal-600 dark:text-emerald-500"
+                  >تومان</span
                 >
-                  180,000
-                  <span
-                    class="text-xs md:text-sm text-teal-600 dark:text-emerald-500"
-                    >تومان</span
-                  >
+              </span>
+              <div class="hidden items-center offer">
+                <span
+                  class="text-base md:text-xl md:font-DanaDemiBolid text-gray-400"
+                >
+                  120,000
                 </span>
-                <div class="hidden items-center offer">
-                  <span
-                    class="text-base md:text-xl md:font-DanaDemiBolid text-gray-400"
-                  >
-                    120,000
-                  </span>
-                  <span
-                    class="lg:hidden xl:inline-block text-xs md:text-sm text-gray-400"
-                    >تومان</span
-                  >
-                </div>
-              </div>
-              <div class="flex justify-between items-center mt-2.5 md:mt-4">
-                <div class="flex-center gap-x-2.5">
-                  <span
-                    class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 rounded-full text-gray-400 hover:text-white transition-all cursor-pointer"
-                  >
-                    <svg class="w-4 h-4 md:w-[18px] md:h-[16.5px]">
-                      <use xlink:href="#shopping-cart"></use>
-                    </svg>
-                  </span>
-                  <svg
-                    class="w-4 h-4 md:w-[18px] md:h-[18px] text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500"
-                  >
-                    <use xlink:href="#arrows-right-left"></use>
-                  </svg>
-                </div>
-                <div class="flex">
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                </div>
+                <span
+                  class="lg:hidden xl:inline-block text-xs md:text-sm text-gray-400"
+                  >تومان</span
+                >
               </div>
             </div>
-            <div
-              class="flex flex-col px-2 py-[22px] md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-custom"
-            >
-              <div class="relative mb-2 md:mb-5">
+            <div class="flex justify-between items-center mt-2.5 md:mt-4">
+              <div class="flex-center gap-x-2.5">
                 <span
-                  class="absolute top-1/5 right-1/5 block w-[54px] h-[30px] text-center leading-8 rounded-full bg-orange-300 text-white dark:text-zinc-700"
-                  >۱۲٪</span
+                  class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 rounded-full text-gray-400 hover:text-white transition-all cursor-pointer"
                 >
-                <img
-                  src="../public/images/products/p6.png"
-                  loading="lazy"
-                  class="w-32 h-32 md:w-[260px] md:h-[260px] m-auto"
-                />
-              </div>
-              <p
-                class="h-14 text-sm/[28px] md:text-xl font-DanaMedium text-zinc-700 dark:text-white line-clamp-2 mb-1.5 md:mb-2.5"
-              >
-                قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
-              </p>
-              <!-- Discounted products -->
-              <div class="flex gap-x-2.5">
-                <span
-                  class="text-base md:text-xl md:font-DanaDemiBolid text-teal-600 dark:text-emerald-500"
-                >
-                  175,000
-                  <span
-                    class="text-xs md:text-sm text-teal-600 dark:text-emerald-500"
-                    >تومان</span
-                  >
+                  <svg class="w-4 h-4 md:w-[18px] md:h-[16.5px]">
+                    <use xlink:href="#shopping-cart"></use>
+                  </svg>
                 </span>
-                <div class="flex items-center offer">
-                  <span
-                    class="text-base md:text-xl md:font-DanaDemiBolid text-gray-400"
-                  >
-                    154,000
-                  </span>
-                  <span
-                    class="lg:hidden xl:inline-block text-xs md:text-sm text-gray-400"
-                    >تومان</span
-                  >
-                </div>
-              </div>
-              <div class="flex justify-between items-center mt-2.5 md:mt-4">
-                <div class="flex-center gap-x-2.5">
-                  <span
-                    class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 rounded-full text-gray-400 hover:text-white transition-all cursor-pointer"
-                  >
-                    <svg class="w-4 h-4 md:w-[18px] md:h-[16.5px]">
-                      <use xlink:href="#shopping-cart"></use>
-                    </svg>
-                  </span>
-                  <svg
-                    class="w-4 h-4 md:w-[18px] md:h-[18px] text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500"
-                  >
-                    <use xlink:href="#arrows-right-left"></use>
-                  </svg>
-                </div>
-                <div class="flex">
-                  <svg
-                    class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400"
-                  >
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col px-2 py-[22px] md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-custom"
-            >
-              <div class="relative mb-2 md:mb-5">
-                <span
-                  class="hidden absolute top-1/5 right-1/5 w-[54px] h-[30px] text-center leading-8 rounded-full bg-orange-300 text-white dark:text-zinc-700"
-                  >۱۲٪</span
+                <svg
+                  class="w-4 h-4 md:w-[18px] md:h-[18px] text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500"
                 >
-                <img
-                  src="../public/images/products/p7.png"
-                  loading="lazy"
-                  class="w-32 h-32 md:w-[260px] md:h-[260px] m-auto"
-                />
+                  <use xlink:href="#arrows-right-left"></use>
+                </svg>
               </div>
-              <p
-                class="h-14 text-sm/[28px] md:text-xl font-DanaMedium text-zinc-700 dark:text-white line-clamp-2 mb-1.5 md:mb-2.5"
-              >
-                قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
-              </p>
-              <!-- Discounted products -->
-              <div class="flex gap-x-2.5">
-                <span
-                  class="text-base md:text-xl md:font-DanaDemiBolid text-teal-600 dark:text-emerald-500"
-                >
-                  175,000
-                  <span
-                    class="text-xs md:text-sm text-teal-600 dark:text-emerald-500"
-                    >تومان</span
-                  >
-                </span>
-                <div class="hidden items-center offer">
-                  <span
-                    class="text-base md:text-xl md:font-DanaDemiBolid text-gray-400"
-                  >
-                    154,000
-                  </span>
-                  <span
-                    class="lg:hidden xl:inline-block text-xs md:text-sm text-gray-400"
-                    >تومان</span
-                  >
-                </div>
-              </div>
-              <div class="flex justify-between items-center mt-2.5 md:mt-4">
-                <div class="flex-center gap-x-2.5">
-                  <span
-                    class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 rounded-full text-gray-400 hover:text-white transition-all cursor-pointer"
-                  >
-                    <svg class="w-4 h-4 md:w-[18px] md:h-[16.5px]">
-                      <use xlink:href="#shopping-cart"></use>
-                    </svg>
-                  </span>
-                  <svg
-                    class="w-4 h-4 md:w-[18px] md:h-[18px] text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500"
-                  >
-                    <use xlink:href="#arrows-right-left"></use>
-                  </svg>
-                </div>
-                <div class="flex">
-                  <svg
-                    class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400"
-                  >
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col px-2 py-[22px] md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-custom"
-            >
-              <div class="relative mb-2 md:mb-5">
-                <span
-                  class="absolute top-1/5 right-1/5 hidden w-[54px] h-[30px] text-center leading-8 rounded-full bg-orange-300 text-white dark:text-zinc-700"
-                  >۱۲٪</span
-                >
-                <img
-                  src="../public/images/products/p8.png"
-                  loading="lazy"
-                  class="w-32 h-32 md:w-[260px] md:h-[260px] m-auto"
-                />
-              </div>
-              <p
-                class="h-14 text-sm/[28px] md:text-xl font-DanaMedium text-zinc-700 dark:text-white line-clamp-2 mb-1.5 md:mb-2.5"
-              >
-                قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
-              </p>
-              <!-- Discounted products -->
-              <div class="hidden gap-x-2.5">
-                <span
-                  class="text-base md:text-xl md:font-DanaDemiBolid text-teal-600 dark:text-emerald-500"
-                >
-                  175,000
-                  <span
-                    class="text-xs md:text-sm text-teal-600 dark:text-emerald-500"
-                    >تومان</span
-                  >
-                </span>
-                <div class="flex items-center offer">
-                  <span
-                    class="text-base md:text-xl md:font-DanaDemiBolid text-gray-400"
-                  >
-                    154,000
-                  </span>
-                  <span
-                    class="lg:hidden xl:inline-block text-xs md:text-sm text-gray-400"
-                    >تومان</span
-                  >
-                </div>
-              </div>
-              <!-- unavailable products -->
-              <span class="text-base md:text-xl text-red-400"
-                >فعلا موجود نیست</span
-              >
-              <div class="flex justify-between items-center mt-2.5 md:mt-4">
-                <div class="flex-center gap-x-2.5">
-                  <span
-                    class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 rounded-full text-gray-400 hover:text-white transition-all cursor-pointer"
-                  >
-                    <svg class="w-4 h-4 md:w-[18px] md:h-[16.5px]">
-                      <use xlink:href="#shopping-cart"></use>
-                    </svg>
-                  </span>
-                  <svg
-                    class="w-4 h-4 md:w-[18px] md:h-[18px] text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500"
-                  >
-                    <use xlink:href="#arrows-right-left"></use>
-                  </svg>
-                </div>
-                <div class="flex">
-                  <svg
-                    class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400"
-                  >
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                  <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
-                    <use xlink:href="#star"></use>
-                  </svg>
-                </div>
+              <div class="flex">
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
               </div>
             </div>
           </div>
-          <!-- coffe club -->
+          <div
+            class="flex flex-col px-2 py-[22px] md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-custom"
+          >
+            <div class="relative mb-2 md:mb-5">
+              <span
+                class="absolute top-1/5 right-1/5 block w-[54px] h-[30px] text-center leading-8 rounded-full bg-orange-300 text-white dark:text-zinc-700"
+                >۱۲٪</span
+              >
+              <img
+                src="../public/images/products/p6.png"
+                loading="lazy"
+                class="w-32 h-32 md:w-[260px] md:h-[260px] m-auto"
+              />
+            </div>
+            <p
+              class="h-14 text-sm/[28px] md:text-xl font-DanaMedium text-zinc-700 dark:text-white line-clamp-2 mb-1.5 md:mb-2.5"
+            >
+              قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+            </p>
+            <!-- Discounted products -->
+            <div class="flex gap-x-2.5">
+              <span
+                class="text-base md:text-xl md:font-DanaDemiBolid text-teal-600 dark:text-emerald-500"
+              >
+                175,000
+                <span
+                  class="text-xs md:text-sm text-teal-600 dark:text-emerald-500"
+                  >تومان</span
+                >
+              </span>
+              <div class="flex items-center offer">
+                <span
+                  class="text-base md:text-xl md:font-DanaDemiBolid text-gray-400"
+                >
+                  154,000
+                </span>
+                <span
+                  class="lg:hidden xl:inline-block text-xs md:text-sm text-gray-400"
+                  >تومان</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-between items-center mt-2.5 md:mt-4">
+              <div class="flex-center gap-x-2.5">
+                <span
+                  class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 rounded-full text-gray-400 hover:text-white transition-all cursor-pointer"
+                >
+                  <svg class="w-4 h-4 md:w-[18px] md:h-[16.5px]">
+                    <use xlink:href="#shopping-cart"></use>
+                  </svg>
+                </span>
+                <svg
+                  class="w-4 h-4 md:w-[18px] md:h-[18px] text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500"
+                >
+                  <use xlink:href="#arrows-right-left"></use>
+                </svg>
+              </div>
+              <div class="flex">
+                <svg
+                  class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400"
+                >
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col px-2 py-[22px] md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-custom"
+          >
+            <div class="relative mb-2 md:mb-5">
+              <span
+                class="hidden absolute top-1/5 right-1/5 w-[54px] h-[30px] text-center leading-8 rounded-full bg-orange-300 text-white dark:text-zinc-700"
+                >۱۲٪</span
+              >
+              <img
+                src="../public/images/products/p7.png"
+                loading="lazy"
+                class="w-32 h-32 md:w-[260px] md:h-[260px] m-auto"
+              />
+            </div>
+            <p
+              class="h-14 text-sm/[28px] md:text-xl font-DanaMedium text-zinc-700 dark:text-white line-clamp-2 mb-1.5 md:mb-2.5"
+            >
+              قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+            </p>
+            <!-- Discounted products -->
+            <div class="flex gap-x-2.5">
+              <span
+                class="text-base md:text-xl md:font-DanaDemiBolid text-teal-600 dark:text-emerald-500"
+              >
+                175,000
+                <span
+                  class="text-xs md:text-sm text-teal-600 dark:text-emerald-500"
+                  >تومان</span
+                >
+              </span>
+              <div class="hidden items-center offer">
+                <span
+                  class="text-base md:text-xl md:font-DanaDemiBolid text-gray-400"
+                >
+                  154,000
+                </span>
+                <span
+                  class="lg:hidden xl:inline-block text-xs md:text-sm text-gray-400"
+                  >تومان</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-between items-center mt-2.5 md:mt-4">
+              <div class="flex-center gap-x-2.5">
+                <span
+                  class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 rounded-full text-gray-400 hover:text-white transition-all cursor-pointer"
+                >
+                  <svg class="w-4 h-4 md:w-[18px] md:h-[16.5px]">
+                    <use xlink:href="#shopping-cart"></use>
+                  </svg>
+                </span>
+                <svg
+                  class="w-4 h-4 md:w-[18px] md:h-[18px] text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500"
+                >
+                  <use xlink:href="#arrows-right-left"></use>
+                </svg>
+              </div>
+              <div class="flex">
+                <svg
+                  class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400"
+                >
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col px-2 py-[22px] md:p-5 rounded-2xl bg-white dark:bg-zinc-700 shadow-custom"
+          >
+            <div class="relative mb-2 md:mb-5">
+              <span
+                class="absolute top-1/5 right-1/5 hidden w-[54px] h-[30px] text-center leading-8 rounded-full bg-orange-300 text-white dark:text-zinc-700"
+                >۱۲٪</span
+              >
+              <img
+                src="../public/images/products/p8.png"
+                loading="lazy"
+                class="w-32 h-32 md:w-[260px] md:h-[260px] m-auto"
+              />
+            </div>
+            <p
+              class="h-14 text-sm/[28px] md:text-xl font-DanaMedium text-zinc-700 dark:text-white line-clamp-2 mb-1.5 md:mb-2.5"
+            >
+              قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+            </p>
+            <!-- Discounted products -->
+            <div class="hidden gap-x-2.5">
+              <span
+                class="text-base md:text-xl md:font-DanaDemiBolid text-teal-600 dark:text-emerald-500"
+              >
+                175,000
+                <span
+                  class="text-xs md:text-sm text-teal-600 dark:text-emerald-500"
+                  >تومان</span
+                >
+              </span>
+              <div class="flex items-center offer">
+                <span
+                  class="text-base md:text-xl md:font-DanaDemiBolid text-gray-400"
+                >
+                  154,000
+                </span>
+                <span
+                  class="lg:hidden xl:inline-block text-xs md:text-sm text-gray-400"
+                  >تومان</span
+                >
+              </div>
+            </div>
+            <!-- unavailable products -->
+            <span class="text-base md:text-xl text-red-400"
+              >فعلا موجود نیست</span
+            >
+            <div class="flex justify-between items-center mt-2.5 md:mt-4">
+              <div class="flex-center gap-x-2.5">
+                <span
+                  class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 rounded-full text-gray-400 hover:text-white transition-all cursor-pointer"
+                >
+                  <svg class="w-4 h-4 md:w-[18px] md:h-[16.5px]">
+                    <use xlink:href="#shopping-cart"></use>
+                  </svg>
+                </span>
+                <svg
+                  class="w-4 h-4 md:w-[18px] md:h-[18px] text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500"
+                >
+                  <use xlink:href="#arrows-right-left"></use>
+                </svg>
+              </div>
+              <div class="flex">
+                <svg
+                  class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400"
+                >
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="w-4 h-4 md:w-6 md:h-6 text-yellow-400">
+                  <use xlink:href="#star"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- coffe club -->
+        <div class="container">
           <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-[31px] px-3 py-8 bg-gradient-to-r from-emerald-500 to-emerald-600 mt-8 md:mt-20 rounded-2xl"
           >
@@ -1964,359 +1974,363 @@
               </div>
             </div>
           </div>
-          <!-- readable articles -->
-          <div class="mt-8 md:mt-20">
-            <div class="flex justify-between items-center mb-5 md:mb-12">
-              <span class="section-title">مطالب خواندنی</span>
-              <a class="flex text-base md:text-xl items-center text-orange-300">
-                مشاهده همه
-                <span class="hidden md:inline">مطالب</span>
-                <svg class="w-5 h-5 md:w-6 md:h-6">
-                  <use xlink:href="#chevron-left-mini"></use>
-                </svg>
-              </a>
-            </div>
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 md:gap-5"
-            >
-              <div
-                class="flex group gap-2.5 md:gap-x-3 md:flex-col p-2.5 rounded-2xl bg-white dark:bg-zinc-700 w-full"
-              >
-                <div class="relative">
-                  <img
-                    src="../public/images/blogs/blog-1.png"
-                    class="w-[130px] md:w-full h-[130px] md:h-[186px] rounded-2xl rounded-bl-4xl"
-                  />
-                  <div
-                    class="hidden group-hover:flex-center absolute inset-0 bg-gradient-to-l from-orange-300/80 to-orange-200/80 w-full h-full rounded-2xl rounded-bl-4xl"
-                  >
-                    <svg
-                      fill="#78350F"
-                      class="w-11 h-11 md:w-[138px] md:h-[54px]"
-                    >
-                      <use xlink:href="#logo-type"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between">
-                  <span
-                    class="w-full md:w-[193px] line-clamp-2 text-sm md:text-lg dark:text-white overflow-hidden h-[60px] border-b border-b-gray-100 md:border-b-0 dark:border-white/10"
-                    >طرز تهیه قهوه دمی با دستگاه اروپرس خط دوم اسم طولانی</span
-                  >
-                  <div
-                    class="flex justify-between items-center md:pr-5 md:border-r md:border-r-gray-100 dark:border-white/10"
-                  >
-                    <div class="flex gap-x-1 md:flex-col">
-                      <span
-                        class="text-xs md:text-2xl text-teal-600 dark:text-emerald-500"
-                        >۲۱</span
-                      >
-                      <span class="text-xs text-teal-600 dark:text-emerald-500"
-                        >مرداد</span
-                      >
-                      <span class="text-xs text-teal-600 dark:text-emerald-500"
-                        >۱۴۰۲</span
-                      >
-                    </div>
-                    <a
-                      class="flex gap-x-1.5 px-2 py-[3px] rounded-md md:hidden items-center bg-orange-200/20 text-orange-300 text-sm"
-                    >
-                      مطالعه
-                      <svg class="w-4 h-4">
-                        <use xlink:href="#arrow-left-outline"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex group gap-2.5 md:gap-x-3 md:flex-col p-2.5 rounded-2xl bg-white dark:bg-zinc-700 w-full"
-              >
-                <div class="relative">
-                  <img
-                    src="../public/images/blogs/blog-2.png"
-                    class="w-[130px] md:w-full h-[130px] md:h-[186px] rounded-2xl rounded-bl-4xl"
-                  />
-                  <div
-                    class="hidden group-hover:flex-center absolute inset-0 bg-gradient-to-l from-orange-300/80 to-orange-200/80 w-full h-full rounded-2xl rounded-bl-4xl"
-                  >
-                    <svg
-                      fill="#78350F"
-                      class="w-11 h-11 md:w-[138px] md:h-[54px]"
-                    >
-                      <use xlink:href="#logo-type"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between">
-                  <span
-                    class="w-full md:w-[193px] line-clamp-2 text-sm md:text-lg dark:text-white overflow-hidden h-[60px] border-b border-b-gray-100 md:border-b-0 dark:border-white/10"
-                    >طرز تهیه قهوه دمی با دستگاه اروپرس خط دوم اسم طولانی</span
-                  >
-                  <div
-                    class="flex justify-between items-center md:pr-5 md:border-r md:border-r-gray-100 dark:border-white/10"
-                  >
-                    <div class="flex gap-x-1 md:flex-col">
-                      <span
-                        class="text-xs md:text-2xl text-teal-600 dark:text-emerald-500"
-                        >۲۱</span
-                      >
-                      <span class="text-xs text-teal-600 dark:text-emerald-500"
-                        >مرداد</span
-                      >
-                      <span class="text-xs text-teal-600 dark:text-emerald-500"
-                        >۱۴۰۲</span
-                      >
-                    </div>
-                    <a
-                      class="flex gap-x-1.5 px-2 py-[3px] rounded-md md:hidden items-center bg-orange-200/20 text-orange-300 text-sm"
-                    >
-                      مطالعه
-                      <svg class="w-4 h-4">
-                        <use xlink:href="#arrow-left-outline"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex group gap-2.5 md:gap-x-3 md:flex-col p-2.5 rounded-2xl bg-white dark:bg-zinc-700 w-full"
-              >
-                <div class="relative">
-                  <img
-                    src="../public/images/blogs/blog-3.png"
-                    class="w-[130px] md:w-full h-[130px] md:h-[186px] rounded-2xl rounded-bl-4xl"
-                  />
-                  <div
-                    class="hidden group-hover:flex-center absolute inset-0 bg-gradient-to-l from-orange-300/80 to-orange-200/80 w-full h-full rounded-2xl rounded-bl-4xl"
-                  >
-                    <svg
-                      fill="#78350F"
-                      class="w-11 h-11 md:w-[138px] md:h-[54px]"
-                    >
-                      <use xlink:href="#logo-type"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between">
-                  <span
-                    class="w-full md:w-[193px] line-clamp-2 text-sm md:text-lg dark:text-white overflow-hidden h-[60px] border-b border-b-gray-100 md:border-b-0 dark:border-white/10"
-                    >طرز تهیه قهوه دمی با دستگاه اروپرس خط دوم اسم طولانی</span
-                  >
-                  <div
-                    class="flex justify-between items-center md:pr-5 md:border-r md:border-r-gray-100 dark:border-white/10"
-                  >
-                    <div class="flex gap-x-1 md:flex-col">
-                      <span
-                        class="text-xs md:text-2xl text-teal-600 dark:text-emerald-500"
-                        >۲۱</span
-                      >
-                      <span class="text-xs text-teal-600 dark:text-emerald-500"
-                        >مرداد</span
-                      >
-                      <span class="text-xs text-teal-600 dark:text-emerald-500"
-                        >۱۴۰۲</span
-                      >
-                    </div>
-                    <a
-                      class="flex gap-x-1.5 px-2 py-[3px] rounded-md md:hidden items-center bg-orange-200/20 text-orange-300 text-sm"
-                    >
-                      مطالعه
-                      <svg class="w-4 h-4">
-                        <use xlink:href="#arrow-left-outline"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex group gap-2.5 md:gap-x-3 md:flex-col p-2.5 rounded-2xl bg-white dark:bg-zinc-700 w-full"
-              >
-                <div class="relative">
-                  <img
-                    src="../public/images/blogs/blog-4.png"
-                    class="w-[130px] md:w-full h-[130px] md:h-[186px] rounded-2xl rounded-bl-4xl"
-                  />
-                  <div
-                    class="hidden group-hover:flex-center absolute inset-0 bg-gradient-to-l from-orange-300/80 to-orange-200/80 w-full h-full rounded-2xl rounded-bl-4xl"
-                  >
-                    <svg
-                      fill="#78350F"
-                      class="w-11 h-11 md:w-[138px] md:h-[54px]"
-                    >
-                      <use xlink:href="#logo-type"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between">
-                  <span
-                    class="w-full md:w-[193px] line-clamp-2 text-sm md:text-lg dark:text-white overflow-hidden h-[60px] border-b border-b-gray-100 md:border-b-0 dark:border-white/10"
-                    >طرز تهیه قهوه دمی با دستگاه اروپرس خط دوم اسم طولانی</span
-                  >
-                  <div
-                    class="flex justify-between items-center md:pr-5 md:border-r md:border-r-gray-100 dark:border-white/10"
-                  >
-                    <div class="flex gap-x-1 md:flex-col">
-                      <span
-                        class="text-xs md:text-2xl text-teal-600 dark:text-emerald-500"
-                        >۲۱</span
-                      >
-                      <span class="text-xs text-teal-600 dark:text-emerald-500"
-                        >مرداد</span
-                      >
-                      <span class="text-xs text-teal-600 dark:text-emerald-500"
-                        >۱۴۰۲</span
-                      >
-                    </div>
-                    <a
-                      class="flex gap-x-1.5 px-2 py-[3px] rounded-md md:hidden items-center bg-orange-200/20 text-orange-300 text-sm"
-                    >
-                      مطالعه
-                      <svg class="w-4 h-4">
-                        <use xlink:href="#arrow-left-outline"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+      </section>
+      <section>
+        <!-- readable articles -->
+        <div class="container mt-8 md:mt-20">
+          <div class="flex justify-between items-center mb-5 md:mb-12">
+            <span class="section-title">مطالب خواندنی</span>
+            <a class="flex text-base md:text-xl items-center text-orange-300">
+              مشاهده همه
+              <span class="hidden md:inline">مطالب</span>
+              <svg class="w-5 h-5 md:w-6 md:h-6">
+                <use xlink:href="#chevron-left-mini"></use>
+              </svg>
+            </a>
           </div>
-          <!-- one of the best -->
           <div
-            class="grid grid-cols-1 md:grid-cols-4 md:gap-5 gap-8 mt-7 md:mt-28"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 md:gap-5"
           >
-            <div>
-              <img
-                src="/public/images/contact.png"
-                class="w-[296px] h-[305px]"
-              />
-            </div>
-            <div class="col-span-3 flex flex-col">
-              <span class="section-title">یکی از بهترین قهوه ها !</span>
-              <span class="section-subtitle mb-5 md:mb-6"
-                >کیفیت قهوه را از ما بخواهید ...</span
-              >
-              <span
-                class="flex gap-x-2.5 mb-5 md:mb-6 child:w-1 child:h-1 child:rounded-full child:bg-zinc-700 child:dark:bg-gray-400"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-              <span class="text-lg md:text-2xl dark:text-white font-normal"
-                >فضای گرم و دنج ما را احساس کنید، جایی که همه می توانند قهوه
-                معطری پیدا کنند و دسرهای خوشمزه ما را که کاملاً با قهوه داغ
-                همراه شده است، امتحان کنند. فضای داخلی شیک و کارکنان خوش برخورد
-                ما روز شما را می سازد!</span
-              >
-              <button
-                class="border border-orange-300 rounded-full flex-center w-[180px] h-[50px] md:h-[60px] md:w-[216px] text-base md:text-xl gap-x-2 text-orange-300 mt-5 md:mt-6"
-              >
-                <svg class="w-[22px] h-[22px] md:w-8 md:h-8">
-                  <use xlink:href="#phone"></use>
-                </svg>
-
-                <span class="tracking-tighter">ثبت سفارش تلفنی</span>
-              </button>
-            </div>
-          </div>
-          <!--  -->
-          <div class="services grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-16 md:mt-28">
             <div
-              class="px-7 py-5"
+              class="flex group gap-2.5 md:gap-x-3 md:flex-col p-2.5 rounded-2xl bg-white dark:bg-zinc-700 w-full"
             >
-              <div
-                class="flex flex-col md:flex-row  md:gap-x-4 items-center"
-              >
+              <div class="relative">
                 <img
-                  src="../public/images/svgs/services/support.svg"
-                  class="w-[66px] h-[73px]"
+                  src="../public/images/blogs/blog-1.png"
+                  class="w-[130px] md:w-full h-[130px] md:h-[186px] rounded-2xl rounded-bl-4xl"
                 />
                 <div
-                  class="flex flex-col mt-5 md:mt-0 gap-y-1 md:gap-y-[14px] text-center md:text-start"
+                  class="hidden group-hover:flex-center absolute inset-0 bg-gradient-to-l from-orange-300/80 to-orange-200/80 w-full h-full rounded-2xl rounded-bl-4xl"
                 >
-                  <span
-                    class="text-sm md:text-lg font-DanaDemiBolid dark:text-white"
-                    >پشتیبانی شبانه روزی</span
+                  <svg
+                    fill="#78350F"
+                    class="w-11 h-11 md:w-[138px] md:h-[54px]"
                   >
-                  <span class="text-xs md:text-sm dark:text-white"
-                    >7 روز هفته ، 24 ساعته</span
+                    <use xlink:href="#logo-type"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex flex-col md:flex-row justify-between">
+                <span
+                  class="w-full md:w-[193px] line-clamp-2 text-sm md:text-lg dark:text-white overflow-hidden h-[60px] border-b border-b-gray-100 md:border-b-0 dark:border-white/10"
+                  >طرز تهیه قهوه دمی با دستگاه اروپرس خط دوم اسم طولانی</span
+                >
+                <div
+                  class="flex justify-between items-center md:pr-5 md:border-r md:border-r-gray-100 dark:border-white/10"
+                >
+                  <div class="flex gap-x-1 md:flex-col">
+                    <span
+                      class="text-xs md:text-2xl text-teal-600 dark:text-emerald-500"
+                      >۲۱</span
+                    >
+                    <span class="text-xs text-teal-600 dark:text-emerald-500"
+                      >مرداد</span
+                    >
+                    <span class="text-xs text-teal-600 dark:text-emerald-500"
+                      >۱۴۰۲</span
+                    >
+                  </div>
+                  <a
+                    class="flex gap-x-1.5 px-2 py-[3px] rounded-md md:hidden items-center bg-orange-200/20 text-orange-300 text-sm"
                   >
+                    مطالعه
+                    <svg class="w-4 h-4">
+                      <use xlink:href="#arrow-left-outline"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
             <div
-              class=" px-7 py-5"
+              class="flex group gap-2.5 md:gap-x-3 md:flex-col p-2.5 rounded-2xl bg-white dark:bg-zinc-700 w-full"
             >
-              <div
-                class="flex flex-col md:flex-row  md:gap-x-4 items-center"
-              >
+              <div class="relative">
                 <img
-                  src="../public/images/svgs/services/express-delivery.svg"
-                  class="w-[66px] h-[73px]"
+                  src="../public/images/blogs/blog-2.png"
+                  class="w-[130px] md:w-full h-[130px] md:h-[186px] rounded-2xl rounded-bl-4xl"
                 />
                 <div
-                  class="flex flex-col mt-5 md:mt-0 gap-y-1 md:gap-y-[14px] text-center md:text-start"
+                  class="hidden group-hover:flex-center absolute inset-0 bg-gradient-to-l from-orange-300/80 to-orange-200/80 w-full h-full rounded-2xl rounded-bl-4xl"
                 >
-                  <span
-                    class="text-sm md:text-lg font-DanaDemiBolid dark:text-white"
-                    >امکان تحویل اکسپرس</span
+                  <svg
+                    fill="#78350F"
+                    class="w-11 h-11 md:w-[138px] md:h-[54px]"
                   >
-                  <span class="text-xs md:text-sm dark:text-white"
-                    >ارسال بسته با سرعت باد</span
+                    <use xlink:href="#logo-type"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex flex-col md:flex-row justify-between">
+                <span
+                  class="w-full md:w-[193px] line-clamp-2 text-sm md:text-lg dark:text-white overflow-hidden h-[60px] border-b border-b-gray-100 md:border-b-0 dark:border-white/10"
+                  >طرز تهیه قهوه دمی با دستگاه اروپرس خط دوم اسم طولانی</span
+                >
+                <div
+                  class="flex justify-between items-center md:pr-5 md:border-r md:border-r-gray-100 dark:border-white/10"
+                >
+                  <div class="flex gap-x-1 md:flex-col">
+                    <span
+                      class="text-xs md:text-2xl text-teal-600 dark:text-emerald-500"
+                      >۲۱</span
+                    >
+                    <span class="text-xs text-teal-600 dark:text-emerald-500"
+                      >مرداد</span
+                    >
+                    <span class="text-xs text-teal-600 dark:text-emerald-500"
+                      >۱۴۰۲</span
+                    >
+                  </div>
+                  <a
+                    class="flex gap-x-1.5 px-2 py-[3px] rounded-md md:hidden items-center bg-orange-200/20 text-orange-300 text-sm"
                   >
+                    مطالعه
+                    <svg class="w-4 h-4">
+                      <use xlink:href="#arrow-left-outline"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
             <div
-              class=" px-7 py-5"
+              class="flex group gap-2.5 md:gap-x-3 md:flex-col p-2.5 rounded-2xl bg-white dark:bg-zinc-700 w-full"
             >
-              <div
-                class="flex flex-col md:flex-row  md:gap-x-4 items-center"
-              >
+              <div class="relative">
                 <img
-                  src="../public/images/svgs/services/pitcher.svg"
-                  class="w-[66px] h-[73px] dark:text-white "
+                  src="../public/images/blogs/blog-3.png"
+                  class="w-[130px] md:w-full h-[130px] md:h-[186px] rounded-2xl rounded-bl-4xl"
                 />
                 <div
-                  class="flex flex-col mt-5 md:mt-0 gap-y-1 md:gap-y-[14px] text-center md:text-start"
+                  class="hidden group-hover:flex-center absolute inset-0 bg-gradient-to-l from-orange-300/80 to-orange-200/80 w-full h-full rounded-2xl rounded-bl-4xl"
                 >
-                  <span
-                    class="text-sm md:text-lg font-DanaDemiBolid dark:text-white"
-                    >اکسسوری قهوه</span
+                  <svg
+                    fill="#78350F"
+                    class="w-11 h-11 md:w-[138px] md:h-[54px]"
                   >
-                  <span class="text-xs md:text-sm dark:text-white"
-                    >وسایل و ادوات دم آوری</span
+                    <use xlink:href="#logo-type"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex flex-col md:flex-row justify-between">
+                <span
+                  class="w-full md:w-[193px] line-clamp-2 text-sm md:text-lg dark:text-white overflow-hidden h-[60px] border-b border-b-gray-100 md:border-b-0 dark:border-white/10"
+                  >طرز تهیه قهوه دمی با دستگاه اروپرس خط دوم اسم طولانی</span
+                >
+                <div
+                  class="flex justify-between items-center md:pr-5 md:border-r md:border-r-gray-100 dark:border-white/10"
+                >
+                  <div class="flex gap-x-1 md:flex-col">
+                    <span
+                      class="text-xs md:text-2xl text-teal-600 dark:text-emerald-500"
+                      >۲۱</span
+                    >
+                    <span class="text-xs text-teal-600 dark:text-emerald-500"
+                      >مرداد</span
+                    >
+                    <span class="text-xs text-teal-600 dark:text-emerald-500"
+                      >۱۴۰۲</span
+                    >
+                  </div>
+                  <a
+                    class="flex gap-x-1.5 px-2 py-[3px] rounded-md md:hidden items-center bg-orange-200/20 text-orange-300 text-sm"
                   >
+                    مطالعه
+                    <svg class="w-4 h-4">
+                      <use xlink:href="#arrow-left-outline"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
             <div
-              class="px-7 py-5"
+              class="flex group gap-2.5 md:gap-x-3 md:flex-col p-2.5 rounded-2xl bg-white dark:bg-zinc-700 w-full"
             >
-              <div
-                class="flex flex-col md:flex-row  md:gap-x-4 items-center"
-              >
+              <div class="relative">
                 <img
-                  src="../public/images/svgs/services/coffee.svg"
-                  class="w-[66px] h-[73px]"
+                  src="../public/images/blogs/blog-4.png"
+                  class="w-[130px] md:w-full h-[130px] md:h-[186px] rounded-2xl rounded-bl-4xl"
                 />
                 <div
-                  class="flex flex-col mt-5 md:mt-0 gap-y-1 md:gap-y-[14px] text-center md:text-start"
+                  class="hidden group-hover:flex-center absolute inset-0 bg-gradient-to-l from-orange-300/80 to-orange-200/80 w-full h-full rounded-2xl rounded-bl-4xl"
                 >
-                  <span
-                    class="text-sm md:text-lg font-DanaDemiBolid dark:text-white"
-                    >رست تخصصی</span
+                  <svg
+                    fill="#78350F"
+                    class="w-11 h-11 md:w-[138px] md:h-[54px]"
                   >
-                  <span class="text-xs md:text-sm dark:text-white"
-                    >تازه برشته شده و با کیفیت</span
+                    <use xlink:href="#logo-type"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex flex-col md:flex-row justify-between">
+                <span
+                  class="w-full md:w-[193px] line-clamp-2 text-sm md:text-lg dark:text-white overflow-hidden h-[60px] border-b border-b-gray-100 md:border-b-0 dark:border-white/10"
+                  >طرز تهیه قهوه دمی با دستگاه اروپرس خط دوم اسم طولانی</span
+                >
+                <div
+                  class="flex justify-between items-center md:pr-5 md:border-r md:border-r-gray-100 dark:border-white/10"
+                >
+                  <div class="flex gap-x-1 md:flex-col">
+                    <span
+                      class="text-xs md:text-2xl text-teal-600 dark:text-emerald-500"
+                      >۲۱</span
+                    >
+                    <span class="text-xs text-teal-600 dark:text-emerald-500"
+                      >مرداد</span
+                    >
+                    <span class="text-xs text-teal-600 dark:text-emerald-500"
+                      >۱۴۰۲</span
+                    >
+                  </div>
+                  <a
+                    class="flex gap-x-1.5 px-2 py-[3px] rounded-md md:hidden items-center bg-orange-200/20 text-orange-300 text-sm"
                   >
+                    مطالعه
+                    <svg class="w-4 h-4">
+                      <use xlink:href="#arrow-left-outline"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section>
+        <!-- one of the best -->
+        <div
+          class="container grid grid-cols-1 md:grid-cols-4 md:gap-5 gap-8 mt-7 md:mt-28"
+        >
+          <div>
+            <img src="/public/images/contact.png" class="w-[296px] h-[305px]" />
+          </div>
+          <div class="col-span-3 flex flex-col">
+            <span class="section-title">یکی از بهترین قهوه ها !</span>
+            <span class="section-subtitle mb-5 md:mb-6"
+              >کیفیت قهوه را از ما بخواهید ...</span
+            >
+            <span
+              class="flex gap-x-2.5 mb-5 md:mb-6 child:w-1 child:h-1 child:rounded-full child:bg-zinc-700 child:dark:bg-gray-400"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="text-lg md:text-2xl dark:text-white font-normal"
+              >فضای گرم و دنج ما را احساس کنید، جایی که همه می توانند قهوه معطری
+              پیدا کنند و دسرهای خوشمزه ما را که کاملاً با قهوه داغ همراه شده
+              است، امتحان کنند. فضای داخلی شیک و کارکنان خوش برخورد ما روز شما
+              را می سازد!</span
+            >
+            <button
+              class="border border-orange-300 rounded-full flex-center w-[180px] h-[50px] md:h-[60px] md:w-[216px] text-base md:text-xl gap-x-2 text-orange-300 mt-5 md:mt-6"
+            >
+              <svg class="w-[22px] h-[22px] md:w-8 md:h-8">
+                <use xlink:href="#phone"></use>
+              </svg>
+
+              <span class="tracking-tighter">ثبت سفارش تلفنی</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!--services -->
+        <div
+          class="container services grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-16 md:mt-28"
+        >
+          <div class="px-7 py-5">
+            <div class="flex flex-col md:flex-row md:gap-x-4 items-center">
+              <img
+                src="../public/images/svgs/services/support.svg"
+                class="w-[66px] h-[73px]"
+              />
+              <div
+                class="flex flex-col mt-5 md:mt-0 gap-y-1 md:gap-y-[14px] text-center md:text-start"
+              >
+                <span
+                  class="text-sm md:text-lg font-DanaDemiBolid dark:text-white"
+                  >پشتیبانی شبانه روزی</span
+                >
+                <span class="text-xs md:text-sm dark:text-white"
+                  >7 روز هفته ، 24 ساعته</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="px-7 py-5">
+            <div class="flex flex-col md:flex-row md:gap-x-4 items-center">
+              <img
+                src="../public/images/svgs/services/express-delivery.svg"
+                class="w-[66px] h-[73px]"
+              />
+              <div
+                class="flex flex-col mt-5 md:mt-0 gap-y-1 md:gap-y-[14px] text-center md:text-start"
+              >
+                <span
+                  class="text-sm md:text-lg font-DanaDemiBolid dark:text-white"
+                  >امکان تحویل اکسپرس</span
+                >
+                <span class="text-xs md:text-sm dark:text-white"
+                  >ارسال بسته با سرعت باد</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="px-7 py-5">
+            <div class="flex flex-col md:flex-row md:gap-x-4 items-center">
+              <img
+                src="../public/images/svgs/services/pitcher.svg"
+                class="w-[66px] h-[73px] dark:text-white"
+              />
+              <div
+                class="flex flex-col mt-5 md:mt-0 gap-y-1 md:gap-y-[14px] text-center md:text-start"
+              >
+                <span
+                  class="text-sm md:text-lg font-DanaDemiBolid dark:text-white"
+                  >اکسسوری قهوه</span
+                >
+                <span class="text-xs md:text-sm dark:text-white"
+                  >وسایل و ادوات دم آوری</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="px-7 py-5">
+            <div class="flex flex-col md:flex-row md:gap-x-4 items-center">
+              <img
+                src="../public/images/svgs/services/coffee.svg"
+                class="w-[66px] h-[73px]"
+              />
+              <div
+                class="flex flex-col mt-5 md:mt-0 gap-y-1 md:gap-y-[14px] text-center md:text-start"
+              >
+                <span
+                  class="text-sm md:text-lg font-DanaDemiBolid dark:text-white"
+                  >رست تخصصی</span
+                >
+                <span class="text-xs md:text-sm dark:text-white"
+                  >تازه برشته شده و با کیفیت</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <div class="w-full mt-12 md:mt-36 relative">
+        <svg
+        class="hidden md:block w-[100px] h-[22px] absolute inset-0 mx-auto text-gray-100 dark:text-zinc-800"
+      >
+        <use xlink:href="#curve"></use>
+      </svg>
+      <div
+        class="hidden absolute bottom-0 right-0 left-0 mx-auto w-[30px] h-[30px] border-2 border-orange-300 md:flex justify-center items-center rounded-full translate-y-2/4"
+      >
+        <svg class="w-5 h-5 text-zinc-700 dark:text-white">
+          <use xlink:href="#mini-chevron-up"></use>
+        </svg>
+      </div>
+      </div>
     </main>
 
     <div class="overlay"></div>
