@@ -170,4 +170,22 @@
       content: none;
     }
   }
+  .quick-access{
+    @apply flex items-center gap-2 md:gap-3 text-lg md:text-xl text-[#D1D5DB]
+  }
+  .quick-access:hover{
+    @apply text-orange-300
+  }
+  .quick-access::before{
+    content: "";
+    width:8px;
+    height:4px;
+    background-color:#D1D5DB;
+    display: block;
+    border-radius: 23px;
+  }
+  .quick-access::before:hover{
+    @apply bg-orange-300
+    
+  }
 }
